@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Training</title>
+
+  <%= #stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tag %>
+
+</head>
+
+
+  <body>
+    
+    <div style="width: 950px; margin: 0px auto;">
+
+    <h2>This Is The Layout For The Pages Controller. :D </h2>
+
+    <%= #yield %>
+
+    <% #content_for(:note) do %>
+     <!-- <p> This Could Be Different For Each View. </p> 
+
+    <%# end %> 
+
+    </div>
+
+  </body>
+
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, ➥initial-scale=1.0">
+<%= stylesheet_link_tag "application", :media => "all", ➥"data-turbolinks-track" => true%>
+<%= javascript_include_tag "application", ➥"data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+         <a class="brand">Jump Start Rails</a>
+      </div>
+     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <%= render "/shared/menu" %>
+        <ul class="nav nav-list">
+          <li class="nav-header">Sidebar</li>
+          <li class="active"><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li>
+</ul> </div>
+      <div class="span9">
+        <%= #yield %>
+      </div>
+    </div>
+<hr/>
+    <footer></footer>
+  </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, ➥initial-scale=1.0">
+<%= stylesheet_link_tag "application", :media => "all", ➥"data-turbolinks-track" => true%>
+<%= javascript_include_tag "application", ➥"data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+         <a class="brand">Jump Start Rails</a>
+      </div>
+     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <ul class="nav nav-list">
+          <li class="nav-header">Sidebar</li>
+          <li class="active"><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li>
+</ul> </div>
+      <div class="span9">
+        <%= yield %>
+      </div>
+    </div>
+<hr/>
+    <footer></footer>
+  </div>
+</body>
+</html>
